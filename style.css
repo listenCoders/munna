@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  background-color: rgb(176, 218, 255);
+  width: 80%;
+  margin: 20px auto;
+  height: 80vh;
+
+  /* flex  */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  /* justify-content: center; */
+  /* align-items: center; */
+
+}
+div {
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+h1{
+    text-align: center;
+}
+
+/* note  */
+    /* margin: auto */
+    /* justify-content: center */
+    /* text align : center */
