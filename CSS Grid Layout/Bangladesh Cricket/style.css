@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+
+  background-color: green;
+  height: 80vh;
+}
+.player {
+  height: 100%;
+
+  /* flex */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.player img {
+  height: 50%;
+  width: auto;
+}
+.captain {
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+}
+.v-captain {
+  border-radius: 10px;
+}
