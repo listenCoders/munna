@@ -1,0 +1,13 @@
+body{
+    background-color: khaki;
+    /* background-image: url('../rsc/images/uh7op6arhhnprscg18mv.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+p{
+    height: 50vh;
+    background-color: rgb(57, 57, 121);
+    color: white;
+    margin-bottom: 20px;
+}

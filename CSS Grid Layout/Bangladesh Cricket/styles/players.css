@@ -2,7 +2,7 @@
 #players{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 10px;
+    gap: 50px;
     background-color: yellow;
 }
 .player{

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS FR</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-size: 40px;
+      }
+      .container {
+        background-color: khaki;
+        padding: 10px;
+
+        /* grid */
+        display: grid;
+        grid-template-columns: 1fr 1fr auto;
+      }
+      .item1 {
+        background-color: blue;
+        color: white;
+      }
+      .item3 {
+        background-color: blue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+      <div class="item5">5</div>
+    </div>
+  </body>
+</html>
