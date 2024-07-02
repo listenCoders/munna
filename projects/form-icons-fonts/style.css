@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+
+
+
+form {
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+  padding: 50px 0;
+}
+label{
+    margin: 0 10px;
+}
+#btn{
+    padding: 5px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+input{
+    background-color: skyblue;
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 10px;
+    width: 300px;
+}
+
+input:hover{
+    background-color: rgb(249, 169, 56);
+}
+
+input:focus{
+    background-color: tomato;
+}
+
+select{
+    background-color: skyblue;
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+
+.test-icon{
+    color: red;
+    font-size: 60px;
+}
