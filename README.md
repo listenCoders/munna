@@ -1,12 +1,16 @@
 Need to know
-- CSS Position
-- CSS Float
-- CSS Pseudo-class
-- Pseudo-element
+- CSS Pseudo-class **
+- Pseudo-element **
 - CSS Shadow ** 
-- CSS Icons (Font Awesome), CSS Icons
-- CSS Font’s
-- CSS Form’s
+
+- CSS Icons (Font Awesome), CSS Icons **
+- CSS Font’s **
+- CSS Form’s **
+
 - CSS Animation’s 
+
+
 - Responsive Web Design
-- CSS Table
+
+
+- CSS Table **
