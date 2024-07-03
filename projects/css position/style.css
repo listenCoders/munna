@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+    position: relative;
+}
+
+.container {
+  background-color: yellowgreen;
+  height: 50vh;
+  width: 100%;
+  position: relative;
+}
+.box {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    /* position: static; */
+    position: sticky;
+    top: 0;
+    left: 20px;
+
+}
+
+p{
+    position: sticky;
+    top: 0;
+    background-color: green;
+}
+
+
+.box2{
+    margin-top: 10px;
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+    /* left: 0; */
+    right: 0;
+}
+
+
+
+
+/* animated box */
+.box3{
+    margin-top: 10px;
+    background-color: red;
+    height: 50px;
+    /* width: 50px; */
+
+    /* animations */
+    animation-name: munna1;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    /* animation-direction: reverse; */
+    /* animation-timing-function: ease; */
+    /* animation-timing-function: ease-in; */
+    /* animation-timing-function: ease-out; */
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes munna1 {
+    from{
+        width: 150px;
+    }
+    to{
+        width: 300px;
+    }
+}
+
+
+.box4{
+    position: fixed;
+    top: 0;
+    left: 20px;
+    margin-top: 10px;
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    animation-name: munna2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes munna2 {
+    0%{
+        width: 50px;
+        left: 20px;
+    }
+    10%{
+        width: 100px;
+        left: 50px;
+    }
+    100%{
+        width: 500px;
+        left: 150px;
+    }
+}

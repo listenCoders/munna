@@ -6,6 +6,7 @@ Need to know
 - CSS Icons (Font Awesome), CSS Icons **
 - CSS Font’s **
 - CSS Form’s **
+- CSS Positions
 
 - CSS Animation’s 
 
