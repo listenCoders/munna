@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: skyblue;
+}
+
+.box{
+    margin: 5px auto;
+    height: 500px;
+    /* margin: 5px; */
+    width: 800px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* responsive */
+@media (max-width:500px) {
+    /* *{
+        margin: 100px;
+        padding: 0;
+    }
+    .box{
+        width: 100px;
+    } */
+}
+/* @media (max-width: 600px)  */

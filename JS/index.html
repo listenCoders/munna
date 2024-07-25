@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Operators</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      h1 {
+        text-align: center;
+      }
+      code {
+        background-color: #f0f0f0;
+        padding: 5px;
+        border-radius: 3px;
+      }
+      pre {
+        background-color: #f0f0f0;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>JavaScript Operators</h1>
+
+    <p>
+      Operators are symbols that perform specific operations on one or more
+      values (operands).
+    </p>
+
+    <h2>Arithmetic Operators</h2>
+    <p>Used for performing arithmetic operations:</p>
+    <code>+ (addition)</code>
+    <code>- (subtraction)</code>
+    <code>* (multiplication)</code>
+    <code>/ (division)</code>
+    <code>% (modulo - remainder)</code>
+    <code>++ (increment)</code>
+    <code>-- (decrement)</code>
+
+    <pre>
+<code class="language-javascript">
+let x = 10;
+let y = 5;
+
+console.log(x + y); // Output: 15
+console.log(x - y); // Output: 5
+console.log(x * y); // Output: 50
+console.log(x / y); // Output: 2
+console.log(x % y); // Output: 0
+console.log(++x); // Output: 11 (x becomes 11)
+console.log(--y); // Output: 4 (y becomes 4)
+</code>
+</pre>
+
+    <h2>Assignment Operators</h2>
+    <p>Used to assign values to variables:</p>
+    <code>= (assignment)</code>
+    <code>+= (addition assignment)</code>
+    <code>-= (subtraction assignment)</code>
+    <code>*= (multiplication assignment)</code>
+    <code>/= (division assignment)</code>
+    <code>%= (modulo assignment)</code>
+
+    <pre>
+<code class="language-javascript">
+let a = 5;
+a += 3; // Equivalent to a = a + 3
+console.log(a); // Output: 8
+</code>
+</pre>
+
+    <h2>Comparison Operators</h2>
+    <p>
+      Used to compare two values and return a boolean result (true or false):
+    </p>
+    <code>== (equal to)</code>
+    <code>!= (not equal to)</code>
+    <code>=== (strictly equal to)</code>
+    <code>!== (strictly not equal to)</code>
+    <code>> (greater than)</code>
+    <code>< (less than)</code>
+    <code>>= (greater than or equal to)</code>
+    <code><= (less than or equal to)</code>
+
+    <pre>
+<code class="language-javascript">
+let b = 10;
+let c = "10";
+
+console.log(b == c); // Output: true (value comparison)
+console.log(b === c); // Output: false (type and value comparison)
+console.log(b > c); // Output: false
+</code>
+</pre>
+
+    <h2>Logical Operators</h2>
+    <p>Used to combine multiple conditions:</p>
+    <code>&& (logical AND)</code>
+    <code>|| (logical OR)</code>
+    <code>! (logical NOT)</code>
+
+    <pre>
+<code class="language-javascript">
+let d = true;
+let e = false;
+
+console.log(d && e); // Output: false
+console.log(d || e); // Output: true
+console.log(!d); // Output: false
+</code>
+</pre>
+
+    <!-- Arithmetic Operators -->
+    <h1>Arithmetic Operators</h1>
+
+    <p>
+      Arithmetic operators are used to perform mathematical operations on
+      numbers.
+    </p>
+
+    <h2>Common Arithmetic Operators</h2>
+
+    <ul>
+      <li><strong>Addition (+):</strong> Adds two operands.</li>
+      <li>
+        <strong>Subtraction (-):</strong> Subtracts the second operand from the
+        first.
+      </li>
+      <li><strong>Multiplication (*):</strong> Multiplies two operands.</li>
+      <li>
+        <strong>Division (/):</strong> Divides the first operand by the second.
+      </li>
+      <li>
+        <strong>Modulo (%):</strong> Returns the remainder of a division
+        operation.
+      </li>
+      <li>
+        <strong>Increment (++):</strong> Increases the value of a variable by 1.
+      </li>
+      <li>
+        <strong>Decrement (--):</strong> Decreases the value of a variable by 1.
+      </li>
+    </ul>
+
+    <h2>Examples</h2>
+
+    <pre>
+      <code>let num1 = 10; </code>
+      <code>let num2 = 5; </code>
+      <br>
+      <code>let sum = num1 + num2; // sum will be 15 </code>
+      <code>let difference = num1 - num2; // difference will be 5 </code>
+      <code>let product = num1 * num2; // product will be 50 </code>
+      <code>let quotient = num1 / num2; // quotient will be 2 </code>
+      <code>let remainder = num1 % num2; // remainder will be 0 </code>
+  </pre>
+
+    <h2>Order of Operations</h2>
+
+    <p>
+      JavaScript follows the standard mathematical order of operations
+      (PEMDAS/BODMAS):
+    </p>
+
+    <ol>
+      <li>Parentheses</li>
+      <li>Exponents</li>
+      <li>Multiplication and Division (from left to right)</li>
+      <li>Addition and Subtraction (from left to right)</li>
+    </ol>
+
+    <pre>
+      <code>let result = 2 + 3 * 4; // result will be 14 (multiplication before addition)</code>     
+    </pre>
+  </body>
+</html>

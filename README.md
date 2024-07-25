@@ -6,12 +6,10 @@ Need to know
 - CSS Icons (Font Awesome), CSS Icons **
 - CSS Font’s **
 - CSS Form’s **
-- CSS Positions
+- CSS Positions **
 
-- CSS Animation’s 
+- CSS Animation’s **
 
-
-- Responsive Web Design
-
+- Responsive Web Design 2-3days
 
 - CSS Table **

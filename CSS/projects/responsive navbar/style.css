@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+.dot{
+    display: none;
+}
+#toggole{
+    display: none;
+}
+
+nav{
+    background-color: rgb(87, 61, 255);
+    color: white;
+    height: 80px;
+}
+
+ul{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+}
+
+li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+@media (max-width:800px) {
+    .dot{
+        display: block;
+    }
+    
+    /* res nav */
+    nav{
+        background-color: transparent;
+        display: none;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    ul{
+        flex-direction: column;
+        align-items: start;
+        text-align: start;
+    }
+    
+    li{
+        background-color: yellowgreen;
+        width: 300px;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+    a{
+        color: black;
+    }
+
+    /* tgl */
+    /* Zodi amader check box checked thake tahole amra nav bar dekhabo */
+
+    #toggole:checked ~ nav{
+        display: block;
+    }
+
+    /* #toggole:checked ~ nav {
+        display: block;
+      } */
+
+
+}
+
+  /* ul {
+    display: flex;
+    background-color: goldenrod;
+  }
+
+  li {
+    list-style: none;
+    margin: 0 5px 0 0;
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+  }
+
+  .dot {
+    display: none;
+  }
+  .box {
+    display: none;
+  }
+  @media screen and (max-width: 800px) {
+    nav {
+      display: none;
+    }
+    a {
+      background-color: blue;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+    }
+    .box:checked ~ .navBar {
+      display: block;
+    }
+    .dot {
+      display: block;
+    }
+  } */
