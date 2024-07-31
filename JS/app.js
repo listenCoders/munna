@@ -11,7 +11,7 @@ const classFiveStudent = [
 
 for (let i = 0; i < classFiveStudent.length; i++) {
   const element = classFiveStudent[i];
-  // rootDOM.innerHTML += `<li>${element}</li>`;
+  rootDOM.innerHTML += `<li>${element}</li>`;
 }
 
 const a = 5;

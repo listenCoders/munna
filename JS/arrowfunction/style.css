@@ -1,0 +1,23 @@
+.popup{
+    background-color: rgb(25, 25, 25);
+    color: white;
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+    border-radius: 20px;
+    position: relative;
+    display: none;
+}
+
+.popup button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid gray;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
