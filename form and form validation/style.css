@@ -1,0 +1,35 @@
+/* Global css */
+
+form > div > label {
+    max-width: 100px;
+    min-width: 100px;
+}
+
+.lc-full-w-forms {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.lc-full-w-forms > input {
+  width: 100%;
+}
+
+
+/* project css */
+
+form {
+  background-color: khaki;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+#fullName {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

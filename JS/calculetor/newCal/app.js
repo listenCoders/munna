@@ -1,4 +1,3 @@
-const hello = document.getElementById("hello");
 const input = document.getElementById("inputBox");
 const button = document.querySelectorAll("button"); 
 
