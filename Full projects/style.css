@@ -15,9 +15,9 @@
 }
 
 .catdimage {
-  height: 300px;
-  width: 100%;
-  /* object-fit: cover; */
+  aspect-ratio: 3/2;
+  background-color: #fff88f;
+  object-fit: contain;
   padding: 10px;
 }
 .time-box {
