@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sing up page</title>
+  </head>
+  <body>
+
+    <form id="loginForm" onsubmit="singupData(event)">
+      <h2>Sign Up Page</h2>
+      <br />
+      <label for="fastname">Fast Name:</label>
+      <input type="text" id="fastname" name="fastname" required />
+      <br />
+      <label for="lastname">Last Name:</label>
+      <input type="text" id="lastname" name="lastname" required />
+      <br />
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <br />
+      <div class="btn">
+        <button type="submit" id="submitBtn">Sign Up</button>
+      </div>
+    </form>
+    <!-- <div class="btn">
+        <a href="/index.html">Login</a>
+    </div> -->
+
+    <script src="./singup.js"></script>
+
+  </body>
+</html>

@@ -1,17 +1,12 @@
 let userInfo = JSON.parse(localStorage.getItem("userInfo")) || [];
 
-console.log(userInfo)
-
-const matchingUser = userInfo.find(
-  (user) => user.username.toLowerCase() === "munna" && user.password === "munna123"
-);
-
-let isLoggedIn = matchingUser && matchingUser.isLoggedIn;
+console.log(userInfo);
 
 const handleRedirection = () => {
   const currentPath = window.location.pathname;
+  const loggedInUser = userInfo.find(user => user.isLoggedIn);
 
-  if (!isLoggedIn) {
+  if (!loggedInUser) {
     if (currentPath !== "/index.html" && currentPath !== "/") {
       window.location.replace("/index.html");
     }
@@ -25,11 +20,11 @@ const handleRedirection = () => {
 function submitData(event) {
   event.preventDefault(); // Prevent the form from refreshing the page
 
-  const username = document.getElementById("username").value;
+  const username = document.getElementById("username").value.toLowerCase();
   const password = document.getElementById("password").value;
 
-  const user = userInfo.find(
-    (user) => user.username.toLowerCase() === username.toLowerCase() && user.password === password
+  const user = userInfo.find(user =>
+    user.username.toLowerCase() === username && user.password === password
   );
 
   if (user) {
@@ -41,16 +36,15 @@ function submitData(event) {
   }
 }
 
-handleRedirection();
-
 function logout() {
-  const user = userInfo.find(
-    (user) => user.username.toLowerCase() === "munna" && user.password === "munna123"
-  );
+  const loggedInUser = userInfo.find(user => user.isLoggedIn);
 
-  if (user) {
-    user.isLoggedIn = false;
+  if (loggedInUser) {
+    loggedInUser.isLoggedIn = false;
     localStorage.setItem("userInfo", JSON.stringify(userInfo));
+    window.location.replace("/index.html");
   }
-  window.location.replace("/index.html");
 }
+
+// Execute redirection check on page load
+handleRedirection();

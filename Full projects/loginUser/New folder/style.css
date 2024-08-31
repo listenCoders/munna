@@ -1,0 +1,6 @@
+body{
+    background: linear-gradient(45deg, rgb(85, 11, 11), black);
+}
+.form-group label{
+    color:white;
+}
