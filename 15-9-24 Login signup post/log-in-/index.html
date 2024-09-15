@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Log-in</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <form onsubmit="LogginData(event)">
+        <h1>Log-in</h1>
+        <hr />
+        <div class="input-box">
+          <input type="text" required="required" id="username" />
+          <span>Username</span>
+        </div>
+        <hr />
+        <div class="input-box">
+          <input type="password" required="required" id="password" />
+          <span>Password</span>
+        </div>
+        <hr />
+        <div class="link">
+          <a href="#">Forgot Password</a>
+          <a href="./sign.html">Sing up</a>
+        </div>
+        <div class="submitbgtn">
+          <input type="submit" value="Longin" id="submit" />
+        </div>
+        <script src="./script.js"></script>
+      </form>
+    </div>
+
+    <!-- TODO:
+    1. Post by user
+    2. Find by user's post 
+    3. Error (Fix)
+    -->
+  </body>
+</html>
