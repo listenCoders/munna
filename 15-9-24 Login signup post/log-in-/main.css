@@ -1,16 +1,18 @@
-.posts{
-    min-height: 100vh;
-    margin: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.posts {
+  min-height: 100vh;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-#user_name{
-    color: white;
-    margin: 0 20px;
-    font-size: 18px;
+#user_name {
+  color: white;
+  margin: 0 20px;
+  font-size: 18px;
 }
-.mj_icon{
-    width: 30px;
-    height: 30px;
+.mj_icon {
+  width: 30px;
+  height: 30px;
 }
+
+
