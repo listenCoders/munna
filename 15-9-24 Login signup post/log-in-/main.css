@@ -14,5 +14,30 @@
   width: 30px;
   height: 30px;
 }
+.post_section{
+  display: flex;
+}
+
+.edit_delete{
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+#createPost{
+  display: none;
+}
+/*  */
+
+
+#postDeleteBtn { 
+  display: none;
+}
+
+#editPost { 
+  display: none;
+}
+
+
 
 

@@ -16,7 +16,8 @@ function submitData(event) {
         lastname: lastname.value,
         username: username.value,
         password: password.value,
-        isLoggedIn: false
+        isLoggedIn: false,
+        role: "user"
     }
     oldUserInfo.push(newUser)
 
