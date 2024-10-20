@@ -21,7 +21,16 @@
     <div id="nb_nab"></div>
 
     <div class="container">
-      <form id="updateForm" onsubmit="updateUser(event)">
+      <div id="showUsers"></div>
+
+      <!-- User update -->
+      <h1 class="my-3">Update Profile</h1>
+      <hr />
+      <form
+        id="updateForm"
+        onsubmit="updateUser(event)"
+        class="border p-3 rounded border-primary"
+      >
         <div>
           <label for="firstName">First name </label>
           <input class="form-control" type="text" id="firstName_up" />

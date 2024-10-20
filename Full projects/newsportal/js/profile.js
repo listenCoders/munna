@@ -1,9 +1,5 @@
-const userInfo = JSON.parse(window.localStorage.getItem("userInfo")) || [];
-
+const loginInfo2 = JSON.parse(window.localStorage.getItem("loginInfo"));
 
 const userProfileName = document.getElementById("userProfileName");
-const userProfile = userInfo.find((user) => {
-  return user.userID.toLowerCase() === loginInfo.userID.toLowerCase();
-});
 
-userProfileName.innerHTML = userProfile.firstName + " " + userProfile.lastName;
+userProfileName.innerHTML = loginInfo2.firstName + " " + loginInfo2.lastName;

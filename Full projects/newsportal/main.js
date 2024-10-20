@@ -14,15 +14,15 @@ function submitSignUp(event) {
   const firstName = document.getElementById("firstName").value;
   const lastName = document.getElementById("lastName").value;
   const email = document.getElementById("email").value;
-  const userID = document.getElementById("userID").value;
-  const userPass = document.getElementById("userPass").value;
+  const singUpUserID = document.getElementById("singUpUserID").value;
+  const singUpUserPass = document.getElementById("singUpUserPass").value;
 
   // Password validation pattern
   const regularExpression =
     /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
 
   // Check if password matches the pattern
-  if (!regularExpression.test(userPass)) {
+  if (!regularExpression.test(singUpUserPass)) {
     alert(
       "Password must be between 6-16 characters and contain at least one number and one special character."
     );
@@ -35,17 +35,19 @@ function submitSignUp(event) {
     firstName,
     lastName,
     email,
-    userID,
-    userPass,
+    singUpUserID,
+    singUpUserPass,
     isLoggedIn: false,
     role: "user",
   };
+
+  console.log(userData)
 
   oldUserInfo.push(userData);
 
   window.localStorage.setItem("userInfo", JSON.stringify(oldUserInfo));
 
-  window.location.replace("/");
+  // window.location.replace("/");
 }
 
 // Top news

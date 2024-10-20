@@ -145,8 +145,8 @@ function loginFunc(event) {
   // Corrected the find function with the return statement
   const loginInfo = userInfo.find((user) => {
     return (
-      user.userID.toLowerCase() === userID.value.toLowerCase() &&
-      user.userPass === userPass.value
+      user.singUpUserID.toLowerCase() === userID.value.toLowerCase() &&
+      user.singUpUserPass === userPass.value
     );
   });
 
