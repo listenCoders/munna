@@ -47,7 +47,8 @@ nb_nab.innerHTML = `
                     <a href="/pages/profile.html" style="color: white">
                         <li>Profile</li></a
                     >
-                    <li>Posts</li>
+                    <a href="/pages/post.html" style="color: white"><li>Posts</li>
+                    </a>
                     <a href="/pages/setting.html" style="color: white">
                         <li>Setting</li>
                     </a>

@@ -143,3 +143,11 @@ body{
   background: #cec477;
   border-radius: 10px;
 }
+
+/* Post css */
+/* Post css */
+/* Post css */
+.create_post > button {
+  margin: 10px 0;
+  font-size: 1.3rem;  
+}

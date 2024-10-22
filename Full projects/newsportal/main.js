@@ -1,9 +1,6 @@
-// Initialize userInfo at the top to avoid reference errors
-const userInfo = JSON.parse(window.localStorage.getItem("userInfo")) || [];
-
 // DOM Elements
 const m_top_news = document.getElementById("m_top_news");
-
+const sliderBody = document.getElementById("sliderBody");
 
 // SignUp Form code
 const signUpForm = document.getElementById("signUpForm");
@@ -41,8 +38,6 @@ function submitSignUp(event) {
     role: "user",
   };
 
-  console.log(userData)
-
   oldUserInfo.push(userData);
 
   window.localStorage.setItem("userInfo", JSON.stringify(oldUserInfo));
@@ -51,32 +46,35 @@ function submitSignUp(event) {
 }
 
 // Top news
-const topNews = [
-  {
-    id: 1,
-    title: "Ronaldo Score 905 Goals today",
-    description:
-      "Another couple of brilliant moments from Cristiano Ronaldo took centre stage, as Al-Nassr defeated Al-Orobah 3-0 in the sixth round of Saudi Pro League. Portuguese star not only found the net but also a sharp assist for his teammate Sadio Mané. This match was well indicative of the quality Ronaldo is getting closer inch by inch to that incredible 1,000 goals in his career. This Portuguese forward is still breaking records and captivating the entire world, as he has 905 goals under his belt.",
-    image:
-      "https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/2467/production/_129091390_gettyimages-1325105287.jpg",
-  },
-  {
-    id: 2,
-    title: "Sōsuke Aizen",
-    description:
-      "Sōsuke Aizen (藍染 惣右介, Aizen Sōsuke) is the former captain of the 5th Division in the Gotei 13. He later leaves Soul Society with his followers, Gin Ichimaru and Kaname Tōsen. His lieutenant was Momo Hinamori. He formerly served as the lieutenant of the 5th Division under Shinji Hirako. After waging war against Soul Society with an army of Arrancar, Aizen was defeated by Ichigo Kurosaki and sealed away by Kisuke Urahara, and then imprisoned for his crimes.",
-    image: "https://images3.alphacoders.com/131/1310203.png",
-  },
-];
+const allPost = JSON.parse(window.localStorage.getItem("postArray")) || [];
 
+
+// sliderBody
+allPost.slice(0, 3).forEach((sliderPost) => {
+  sliderBody.innerHTML += `
+          <div class="carousel-item m_heding active" data-bs-interval="2000">
+              <img
+                src=${sliderPost.imageLink}
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="breking_news_title">
+                <h1 class="">${sliderPost.title}</h1>
+                <p class="card-text text-center">
+                  ${sliderPost.description.slice(0, 200)}
+                </p>
+              </div>
+          </div>
+  `;
+});
 
 
 // Display top news
-topNews.forEach((news, index) => {
+allPost.forEach((news, index) => {
   m_top_news.innerHTML += `
     <div class="card mb-3 m_top_news_card">
       <div class="card-body">
-        <img src="${news.image}" class="card-img-top" alt="..." />
+        <img src="${news.imageLink}" class="card-img-top" alt="..." />
         <h5 class="card-title">${news.title}</h5>
         <p class="card-text collapsed-content" id="initDec${index}" style="max-height: 60px;">${news.description.slice(
     0,
