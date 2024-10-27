@@ -16,10 +16,10 @@ function renderPosts() {
       <div class="col">
         <div class="card mb-3" style="width: 18rem;">
           <div class="card-body">
-             <img src="${post.imageLink}" class="card-img-top" alt="..."/>
-            <h5 class="card-title">${post.title}</h5>
+             <img src="${post.imageLink ? post.imageLink : ""}" class="card-img-top" alt="..."/>
+            <h5 class="card-title">${post.title ? post.title : ""}</h5>
             <p class="card-text">
-              ${post.description.slice(0, 50)}...
+              ${post.description ? post.description.slice(0, 50) : ""}...
             </p>
             <button class="btn btn-danger" onclick="deletePost(${index})">Delete</button>
             <button class="btn btn-info" onclick="editPost(${index})">Edit</button>

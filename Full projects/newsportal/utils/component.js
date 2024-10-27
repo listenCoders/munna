@@ -1,4 +1,5 @@
 const nb_nab = document.getElementById("nb_nab");
+const userInfo = JSON.parse(window.localStorage.getItem("userInfo")) || [];
 
 nb_nab.innerHTML = `
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">

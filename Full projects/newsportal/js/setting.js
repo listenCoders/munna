@@ -19,7 +19,7 @@ userID_up.value = loginUser.singUpUserID;
 userPass_up.value = loginUser.singUpUserPass;
 
 const updateUser = (event) => {
-  event.preventDefault();
+
 
   // Find the index of the logged-in user in the array
   const userIndex = user.findIndex(
